@@ -9,12 +9,12 @@ Konkrétnì se jedná o poèty cizincù s pobytem pøechodným, dlouhodobým, pobytem tr
 K prezentaci dat používáme nástroj a službu od cleveranalytics.com.
 Další migraèní dataset vychází ze statistik oecd.org a zachycuje poèty migrantù z jednotlivých zemí svìta.
 
-## Printscreen navrhovaného øešení
-TODO
+## Screenshot z øešení
+![Screenshot - ekonomická krize a její vliv na migraci](hackujstat-2018-screenshot-ekonomicka_krize_a_jeji_vliv_na_migraci.png)
 
-## Seznam dat/datových sad použitých k øešení
-https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi
-https://stats.oecd.org/Index.aspx?DataSetCode=MIG
+## Seznam dat/datových sad použitých v øešení
+* https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi
+* https://stats.oecd.org/Index.aspx?DataSetCode=MIG
 
 ## Seznam èlenù týmu
 * Martin Tesaø
