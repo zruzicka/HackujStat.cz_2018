@@ -16,7 +16,7 @@ import com.opencsv.CSVWriter;
 import cz.zr.hackujstat2018.filters.DataSetFilter.Rules;
 
 /**
- * Initial filter implementation for input CSV files.
+ * DataSet Filter implementation for CSV files.
  * 
  * @author ZRuzicka
  */
@@ -28,7 +28,7 @@ public class DataSetFilter {
     }
 
     /* Debug and settings flags. */
-    static boolean applyDemoProcessing = true;
+    static boolean applyDemoProcessing = false;
     static boolean isInputDebug = false;
 
     String[] targetColumns = new String[] { "id", "hodnota", "rok", "datum", "okres_kod", "okres", "kraj_txt",
@@ -39,15 +39,9 @@ public class DataSetFilter {
             Rules.NOT_EMPTY, Rules.NOT_EMPTY, Rules.NOT_EMPTY, Rules.NOT_EMPTY, Rules.NOT_EMPTY };
     Columns outputColumns = new Columns(targetColumns, sourceColumns, targetColumnsRules);
 
-    public static void main(String[] args) {
+    public void applyFilter(String inputFile) {
         long started = System.currentTimeMillis();
-        DataSetFilter filter = new DataSetFilter();
         try {
-            if (args.length < 1) {
-                System.err.println("Input CSV file must be specified via argument.");
-                System.exit(0);
-            }
-            String inputFile = args[0];
             System.out.println("Input file: " + inputFile);
 
             File f = new File(inputFile);
@@ -61,7 +55,7 @@ public class DataSetFilter {
                     CSVWriter.DEFAULT_ESCAPE_CHARACTER, 
                     CSVWriter.DEFAULT_LINE_END);
 
-            csvWriter.writeNext(filter.outputColumns.getTargetColumns());
+            csvWriter.writeNext(outputColumns.getTargetColumns());
 
             String[] header = null;
             String[] lineColumns;
@@ -70,13 +64,13 @@ public class DataSetFilter {
             while ((lineColumns = csvReader.readNext()) != null) {
                 if (i == 1) { // Defines header columns.
                     header = lineColumns;
-                    filter.outputColumns.initSourceColumnIndices(header);
-                    filter.outputColumns.columnsDebugInfo(header);
+                    outputColumns.initSourceColumnIndices(header);
+                    outputColumns.columnsDebugInfo(header);
                     i++;
                     continue;
                 }
                 String[] columns = lineColumns;
-                String[] output = filter.outputColumns.transformInputData(columns);
+                String[] output = outputColumns.transformInputData(columns);
                 if (isInputDebug) {
                     System.out.println("(" + i + ") input:" + Arrays.toString(columns)); // TMP output.
                     System.out.println("(" + i + ") output:" + Arrays.toString(output)); // TMP output.
@@ -97,7 +91,7 @@ public class DataSetFilter {
             csvWriter.close();
 
             if (isInputDebug) {
-                filter.outputColumns.columnsDebugInfo(header);
+                outputColumns.columnsDebugInfo(header);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -159,6 +153,7 @@ class Columns {
                     return null;
                 } else if (Rules.APPEND.equals(targetColumnsRules[i])) {
                     columnValue = columnValue.replaceAll("\"", "");
+                    // Date format extension.
                     columnValue += "-12-31"; // TODO Appended value should be loaded from rules configuration.
                 }
                 
