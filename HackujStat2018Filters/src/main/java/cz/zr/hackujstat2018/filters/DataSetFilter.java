@@ -1,6 +1,5 @@
 package cz.zr.hackujstat2018.filters;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 
 import cz.zr.hackujstat2018.filters.DataSetFilter.Rules;
 
@@ -53,11 +53,15 @@ public class DataSetFilter {
             File f = new File(inputFile);
             CSVReader csvReader = new CSVReader(new InputStreamReader(new FileInputStream(f), "UTF8"));
 
-            Writer fstream = new OutputStreamWriter(new FileOutputStream(inputFile + ".filtered.csv"),
+            Writer writer = new OutputStreamWriter(new FileOutputStream(inputFile + ".filtered.csv"),
                     StandardCharsets.UTF_8);
-            BufferedWriter bw = new BufferedWriter(fstream);
+            CSVWriter csvWriter = new CSVWriter(writer, 
+                    CSVWriter.DEFAULT_SEPARATOR, 
+                    CSVWriter.DEFAULT_QUOTE_CHARACTER,
+                    CSVWriter.DEFAULT_ESCAPE_CHARACTER, 
+                    CSVWriter.DEFAULT_LINE_END);
 
-            bw.write(filter.outputColumns.getTargetColumnsString() + "\n");
+            csvWriter.writeNext(filter.outputColumns.getTargetColumns());
 
             String[] header = null;
             String[] lineColumns;
@@ -72,13 +76,13 @@ public class DataSetFilter {
                     continue;
                 }
                 String[] columns = lineColumns;
-                String output = filter.outputColumns.transformInputData(columns);
+                String[] output = filter.outputColumns.transformInputData(columns);
                 if (isInputDebug) {
                     System.out.println("(" + i + ") input:" + Arrays.toString(columns)); // TMP output.
-                    System.out.println("(" + i + ") output:" + output); // TMP output.
+                    System.out.println("(" + i + ") output:" + Arrays.toString(output)); // TMP output.
                 }
                 if (output != null) {
-                    bw.write(output + "\n");
+                    csvWriter.writeNext(output);
                     writtenLines++;
                 }
 
@@ -90,7 +94,7 @@ public class DataSetFilter {
             }
 
             csvReader.close();
-            bw.close();
+            csvWriter.close();
 
             if (isInputDebug) {
                 filter.outputColumns.columnsDebugInfo(header);
@@ -141,7 +145,8 @@ class Columns {
         System.out.println("full input header: " + Arrays.toString(header));
     }
 
-    public String transformInputData(String[] inputValues) {
+    public String[] transformInputData(String[] inputValues) {
+        String[] output = new String[targetColumns.length];
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < sourceColumnIndices.length; i++) {
             int columnIndex = sourceColumnIndices[i];
@@ -156,24 +161,15 @@ class Columns {
                     columnValue = columnValue.replaceAll("\"", "");
                     columnValue += "-12-31"; // TODO Appended value should be loaded from rules configuration.
                 }
-
-                sb.append(columnValue);
-                if (i < (targetColumns.length - 1)) {
-                    sb.append(","); // Next column separator.
-                }
+                
+                output[i] = columnValue;
             }
         }
-        return sb.toString();
+        return output;
+    }
+    
+    public String[] getTargetColumns() {
+        return targetColumns;
     }
 
-    public String getTargetColumnsString() {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < targetColumns.length; i++) {
-            sb.append("\"" + targetColumns[i] + "\"");
-            if (i < targetColumns.length - 1) {
-                sb.append(",");
-            }
-        }
-        return sb.toString();
-    }
 }
