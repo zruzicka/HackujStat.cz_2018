@@ -11,8 +11,19 @@ Stažení [dat o cizincích z ČSÚ](https://www.czso.cz/csu/czso/cizinci-podle-
 ```sh
 lein run \
   -m hackuj-stat.csu-foreigners \
-  - \
   foreigners.csv.gz
+```
+
+## Číselník státního občanství z ČSÚ
+
+URL: <http://apl.czso.cz/iSMS/cisdet.jsp?kodcis=3228>
+
+Stažení anglické verze s výběrem relevantních sloupců v CSV:
+
+```sh
+lein run \
+  -m hackuj-stat.citizenship-code-list \
+  citizenship_code_list.csv
 ```
 
 ## License
