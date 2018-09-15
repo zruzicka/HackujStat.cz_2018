@@ -142,13 +142,17 @@ class Columns {
             int columnIndex = sourceColumnIndices[i];
             if (columnIndex < inputValues.length) {
                 String columnValue = inputValues[columnIndex].trim();
+
                 if (Rules.NOT_EMPTY.equals(targetColumnsRules[i])
                         && (columnValue.length() == 0 || "\"\"".equals(columnValue))) {
                     // Column data does not match validation rule constraint. -> Whole row should be skipped.
                     return null;
-                } else {
-                    sb.append(columnValue);
+                } else if (Rules.APPEND.equals(targetColumnsRules[i])) {
+                    columnValue = columnValue.replaceAll("\"", "");
+                    columnValue += "-12-31"; // TODO Appended value should be loaded from rules configuration.
                 }
+
+                sb.append(columnValue);
                 if (i < (targetColumns.length - 1)) {
                     sb.append(","); // Next column separator.
                 }
