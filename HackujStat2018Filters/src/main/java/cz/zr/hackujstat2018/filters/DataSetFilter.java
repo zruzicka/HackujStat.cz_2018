@@ -27,7 +27,7 @@ public class DataSetFilter {
     }
 
     /* Debug and settings flags. */
-    static boolean applyDemoProcessing = false;
+    static boolean applyDemoProcessing = true;
     static boolean isInputDebug = false;
 
     String[] targetColumns = new String[] { "id", "hodnota", "rok", "datum", "okres_kod", "okres", "kraj_txt",
@@ -60,6 +60,7 @@ public class DataSetFilter {
             String[] header = null;
             String readLine = "";
             int i = 1;
+            int writtenLines = 0;
             while ((readLine = b.readLine()) != null) {
                 if (i == 1) { // Defines header columns.
                     header = readLine.replaceAll("\"", "").split(",");
@@ -76,10 +77,11 @@ public class DataSetFilter {
                 }
                 if (output != null) {
                     bw.write(output + "\n");
+                    writtenLines++;
                 }
 
                 i++;
-                if (applyDemoProcessing && i == 10) {
+                if (applyDemoProcessing && writtenLines == 10) {
                     // Demo mode processes only a small subset of data instead of whole file.
                     break;
                 }
@@ -145,7 +147,10 @@ class Columns {
                     // Column data does not match validation rule constraint. -> Whole row should be skipped.
                     return null;
                 } else {
-                    sb.append(columnValue + ",");
+                    sb.append(columnValue);
+                }
+                if (i < (targetColumns.length - 1)) {
+                    sb.append(","); // Next column separator.
                 }
             }
         }
