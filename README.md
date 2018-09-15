@@ -19,7 +19,7 @@ Další migraèní dataset vychází ze statistik oecd.org a zachycuje poèty migrantù 
 ## Seznam èlenù týmu
 * Martin Tesaø
 * Zbynìk Rùžièka
-* Jindrich Mynarz
+* Jindøich Mynarz
 * Narcisa Kadleèáková
 
 ## Linky s aplikací a kódy
