@@ -1,6 +1,5 @@
 package cz.zr.hackujstat2018.filters;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +10,8 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
+
+import com.opencsv.CSVReader;
 
 import cz.zr.hackujstat2018.filters.DataSetFilter.Rules;
 
@@ -48,8 +49,9 @@ public class DataSetFilter {
             }
             String inputFile = args[0];
             System.out.println("Input file: " + inputFile);
+
             File f = new File(inputFile);
-            BufferedReader b = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF8"));
+            CSVReader csvReader = new CSVReader(new InputStreamReader(new FileInputStream(f), "UTF8"));
 
             Writer fstream = new OutputStreamWriter(new FileOutputStream(inputFile + ".filtered.csv"),
                     StandardCharsets.UTF_8);
@@ -58,21 +60,21 @@ public class DataSetFilter {
             bw.write(filter.outputColumns.getTargetColumnsString() + "\n");
 
             String[] header = null;
-            String readLine = "";
+            String[] lineColumns;
             int i = 1;
             int writtenLines = 0;
-            while ((readLine = b.readLine()) != null) {
+            while ((lineColumns = csvReader.readNext()) != null) {
                 if (i == 1) { // Defines header columns.
-                    header = readLine.replaceAll("\"", "").split(",");
+                    header = lineColumns;
                     filter.outputColumns.initSourceColumnIndices(header);
                     filter.outputColumns.columnsDebugInfo(header);
                     i++;
                     continue;
                 }
-                String[] columns = readLine.split(",");
+                String[] columns = lineColumns;
                 String output = filter.outputColumns.transformInputData(columns);
                 if (isInputDebug) {
-                    System.out.println("(" + i + ") input:" + readLine); // TMP output.
+                    System.out.println("(" + i + ") input:" + Arrays.toString(columns)); // TMP output.
                     System.out.println("(" + i + ") output:" + output); // TMP output.
                 }
                 if (output != null) {
@@ -87,9 +89,12 @@ public class DataSetFilter {
                 }
             }
 
-            b.close();
+            csvReader.close();
             bw.close();
 
+            if (isInputDebug) {
+                filter.outputColumns.columnsDebugInfo(header);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
