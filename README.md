@@ -1,4 +1,4 @@
-# HackujStat.cz_2018
+# HackujStat.cz (2018)
 
 ## Název aplikace
 Hackuj stát 2018/dataset cizinci a obèanství
@@ -15,11 +15,11 @@ TODO
 https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi
 
 ## Seznam èlenù týmu
-Martin Tesaø
-Zbynìk Rùžièka
-Jindrich Mynarz
-Narcisa
+* Martin Tesaø
+* Zbynìk Rùžièka
+* Jindrich Mynarz
+* Narcisa
 
 ## Link, kde je umístìna aplikace
-Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j
-Související GitHub repo https://github.com/zruzicka/HackujStat.cz_2018
+* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j
+* Související GitHub repo https://github.com/zruzicka/HackujStat.cz_2018
