@@ -26,6 +26,16 @@ lein run \
   citizenship_code_list.csv
 ```
 
+## Populace států dle World Bank
+
+URL: <https://data.worldbank.org/indicator/sp.pop.totl>
+
+```sh
+lein run \
+  -m hackuj-stat.worldbank-populations \
+  worldbank_populations.csv.gz
+```
+
 ## License
 
 Copyright © 2018 Jindřich Mynarz
