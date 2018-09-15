@@ -1,27 +1,29 @@
 # HackujStat.cz (2018)
 
 ## Název aplikace
-Hackuj stát 2018/dataset cizinci a obèanství
+Prezentace migraèních dat
 
 ## Struèný slovní popis
 Prezentace demografických ukazatelù cizincù v Èeské republice. Využívá data Èeského statistického úøadu z let 2004-2017.
 Konkrétnì se jedná o poèty cizincù s pobytem pøechodným, dlouhodobým, pobytem trvalým a dlouhodobým vízem v Èeské republice, ale vyjma azylantù. Jsou dostupná èlenìní podle pohlaví, pìtiletých vìkových skupin, státního obèanství cizince a podle okresù nebo krajù Èeské republiky.
 K prezentaci dat používáme nástroj a službu od cleveranalytics.com.
+Další migraèní dataset vychází ze statistik oecd.org a zachycuje poèty migrantù z jednotlivých zemí svìta.
 
 ## Printscreen navrhovaného øešení
 TODO
 
 ## Seznam dat/datových sad použitých k øešení
 https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi
+https://stats.oecd.org/Index.aspx?DataSetCode=MIG
 
 ## Seznam èlenù týmu
 * Martin Tesaø
 * Zbynìk Rùžièka
 * Jindrich Mynarz
-* Narcisa
+* Narcisa Kadleèáková
 
 ## Linky s aplikací a kódy
-* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j (vyžaduje pøihlášení).
+* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project (vyžaduje pøihlášení).
 * Související GitHub repo https://github.com/zruzicka/HackujStat.cz_2018
 
 ---
