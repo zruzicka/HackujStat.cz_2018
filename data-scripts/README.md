@@ -4,15 +4,15 @@ Skripty pro hackathon Hackuj stát 2018.
 
 ## Použití
 
-### Data o migraci z ČSÚ 
+### Data o cizincích z ČSÚ 
 
-Stažení [dat o migraci z ČSÚ](https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi) pomocí [Leiningenu](https://leiningen.org):
+Stažení [dat o cizincích z ČSÚ](https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi) pomocí [Leiningenu](https://leiningen.org):
 
 ```sh
 lein run \
-  -m hackuj-stat.csu-migration \
+  -m hackuj-stat.csu-foreigners \
   - \
-  migrace.csv.gz
+  foreigners.csv.gz
 ```
 
 ## License

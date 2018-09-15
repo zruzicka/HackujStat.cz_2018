@@ -1,4 +1,4 @@
-(ns hackuj-stat.csu-migration
+(ns hackuj-stat.csu-foreigners
   (:gen-class)
   (:require [clj-http.client :as client]
             [clojure.data.csv :as csv]
