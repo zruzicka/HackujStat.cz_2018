@@ -1,7 +1,5 @@
-# HackujStat.cz (2018)
-
-## Název aplikace
-Prezentace migraèních dat
+# Prezentace migraèních dat
+Vytvoøeno bìhem akce HackujStat.cz 2018
 
 ## Struèný slovní popis
 Prezentace demografických ukazatelù cizincù v Èeské republice. Využívá data Èeského statistického úøadu z let 2004-2017.
@@ -9,8 +7,12 @@ Konkrétnì se jedná o poèty cizincù s pobytem pøechodným, dlouhodobým, pobytem tr
 K prezentaci dat používáme nástroj a službu od cleveranalytics.com.
 Další migraèní dataset vychází ze statistik oecd.org a zachycuje poèty migrantù z jednotlivých zemí svìta.
 
-## Screenshot z øešení
-![Screenshot - ekonomická krize a její vliv na migraci](hackujstat-2018-screenshot-ekonomicka_krize_a_jeji_vliv_na_migraci.png)
+## Screenshoty z øešení
+Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro cizince s ukrajinským obèanstvím.
+![Screenshot - Poèty migrantù ve svìtì](hackujstat-2018-screenshot_UKR_01_Pocty_migrantu_ve_svete.png)
+![Screenshot - Pøehled migrace v letech 2006-2017](hackujstat-2018-screenshot_UKR_02_Prehled_migrace_2006-2017.png)
+![Screenshot - Období ekonomické krize a její vliv na migraci](hackujstat-2018-screenshot_UKR_03_Obdobi_ekonomicke_krize_a_jeji_vliv_na_migraci.png)
+![Screenshot - Nárust migrace po ekonomické krizi](hackujstat-2018-screenshot_UKR_04_Narust_migrace_po_ekonomicke_krizi.png)
 
 ## Seznam dat/datových sad použitých v øešení
 * https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi
