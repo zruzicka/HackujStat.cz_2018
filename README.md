@@ -25,7 +25,7 @@ Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro 
 * Narcisa Kadleèáková
 
 ## Linky s aplikací a kódy
-* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project (vyžaduje pøihlášení).
+* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project (vyžaduje vytvoøit volný úèet a pøihlášení na CleverAnalytics platformì).
 * Související GitHub repo https://github.com/zruzicka/HackujStat.cz_2018
 
 ---
@@ -41,3 +41,16 @@ Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro 
 * Definice modulù a poèetních metrik (v modelu CleverAnalytics).
 * Analytika výstupních dat.
 * Prezentace dat a výsledkù.
+
+---
+
+## Možnosti dalšího rozšíøení
+### Krátkodobé mìøítko
+* Pøidání pohledu se zamìøením na statistiky azylantù v ÈR v podobném èasovém rozmezí. (Jsme v kontatku s mentorem z ÈSÚ a po komunálních volbách 2018 má probíhat naše další komunikace ohlednì formátu)
+* Pøidání statistik dat cizincù za rok 2018 - tyto data mají být k dispozici (dle informace z ÈSÚ) koncem èervna 2019.
+* Rozšíøení view "Analýza cizincù ve svìtì" o statistiky také z pøedešlých let (= nikoliv prezentace dat pouze ze souèasnosti).
+### Dlouhodobìjší mìøítko
+* Zajímavou možností mùže být též hledání souvislostí ohlednì trendù migrace v návaznosti na ekonomické ukazatele (napø. navázání na statistiky z International Monetary Fund) nebo hledání souvislostí trendu migrace v návaznosti na politickou stabilitu.
+* Další zajímavou možností je snažit se vytvoøit uživatelsky pøívìtivé rozhraní, které by v kontextu statistik migrace umožnilo nahlédnout na události, které byly pro zvolený region významné ve zvoleném èase. Jinými slovy, navázat se na globální archiv zpráv a mít možnost nad ním vykonávat pøíkazy jako 
+`select * from [gdelt-bq:gdeltv2.events] where year=2014 and Actor1CountryCode='UKR' and sourceurl like '%ukraine%' LIMIT 20`
+napøíklad skrze [GDELT 2.0 platformu](https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/) nebo skrze [GDELT 2.0 in Google BigQuery](https://bigquery.cloud.google.com/table/gdelt-bq:gdeltv2.events)
