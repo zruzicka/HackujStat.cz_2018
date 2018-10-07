@@ -1,6 +1,14 @@
 # Don't be ignorant about the world
 Nastartováno bìhem akce HackujStat.cz 2018
 
+**Spoleèenský problém:** Vìdomí veøejnosti se èasto opírá o domnìnky a emoce vytvoøené nezøídka na základì senzaèních titulkù souèasných médií. Chybí komplexní a srozumitelná data pro veøejnost, která nejsou vytržena z dlouhodobìjšího kontextu a trendù.
+**Naše øešení:** Snaha zvýšit povìdomí o okolním svìtì na základì veøejnì dostupných dat a poskytnout reálné statistiky i data a doplnit je o pøehledné vizualizace.
+**Souèasný problém našeho øešení:** jak se dostat do povìdomí širší veøejnosti. :)
+
+## Linky na aplikaci a kódy
+* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project (vyžaduje vytvoøit volný úèet a pøihlášení na CleverAnalytics platformì).
+* Související GitHub repo https://github.com/zruzicka/HackujStat.cz_2018
+
 ## Popis projektu
 
 Cílem projektu je zvýšit povìdomí o okolním svìtì na základì veøejnì dostupných dat a poskytnout reálné statistiky a data tam, kde se vìdomí veøejnosti opírá o domnìnky a emoce vytvoøené èasto na základì senzaèních titulkù souèasných médií. Hloubku problematiky nastiòuje video ["Hans and Ola Rosling: How not to be ignorant about the world"](https://www.ted.com/talks/hans_and_ola_rosling_how_not_to_be_ignorant_about_the_world?language=en) dostupné skrze TED platformu.
@@ -15,11 +23,11 @@ V souèasnosti používáme k prezentaci dat platformu CleverAnalytics, která nám vy
 
 ## Popis pohledù v CleverAnalytics dashboard
 
-#### Analýza cizincù v ÈR
+### Analýza cizincù v ÈR
 Prezentace demografických ukazatelù cizincù v Èeské republice. Využívá data Èeského statistického úøadu z let 2004-2017.
 Konkrétnì se jedná o poèty cizincù s pobytem pøechodným, dlouhodobým, pobytem trvalým a dlouhodobým vízem v Èeské republice, ale vyjma azylantù. Jsou dostupná èlenìní podle pohlaví, pìtiletých vìkových skupin, státního obèanství cizince a podle okresù nebo krajù Èeské republiky.
 
-#### Analýza cizincù ve svìtì
+### Analýza cizincù ve svìtì
 Migraèní dataset vychází ze statistik oecd.org a zachycuje poèty migrantù z jednotlivých zemí svìta.
 
 ## Screenshoty z øešení
@@ -38,10 +46,6 @@ Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro 
 * [Zbynìk Rùžièka](https://github.com/zruzicka)
 * [Jindøich Mynarz](https://github.com/jindrichmynarz)
 * Narcisa Kadleèáková
-
-## Linky s aplikací a kódy
-* Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project (vyžaduje vytvoøit volný úèet a pøihlášení na CleverAnalytics platformì).
-* Související GitHub repo https://github.com/zruzicka/HackujStat.cz_2018
 
 ---
 
