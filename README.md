@@ -1,9 +1,9 @@
 # Don't be ignorant about the world
 Nastartováno bìhem akce HackujStat.cz 2018
 
-**Spoleèenský problém:** Vìdomí veøejnosti se èasto opírá o domnìnky a emoce vytvoøené nezøídka na základì senzaèních titulkù souèasných médií. Chybí komplexní a srozumitelná data pro veøejnost, která nejsou vytržena z dlouhodobìjšího kontextu a trendù.
-**Naše øešení:** Snaha zvýšit povìdomí o okolním svìtì na základì veøejnì dostupných dat a poskytnout reálné statistiky i data a doplnit je o pøehledné vizualizace.
-**Souèasný problém našeho øešení:** jak se dostat do povìdomí širší veøejnosti. :)
+* **Spoleèenský problém:** Vìdomí veøejnosti se èasto opírá o domnìnky a emoce vytvoøené nezøídka na základì senzaèních titulkù souèasných médií. Chybí komplexní a srozumitelná data pro veøejnost, která nejsou vytržena z dlouhodobìjšího kontextu a trendù.
+* **Naše øešení:** Snaha zvýšit povìdomí o okolním svìtì na základì veøejnì dostupných dat a poskytnout reálné statistiky i data a doplnit je o pøehledné vizualizace.
+* **Souèasný problém našeho øešení:** jak se dostat do povìdomí širší veøejnosti. :)
 
 ## Linky na aplikaci a kódy
 * Aplikace pøístupná skrze https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project (vyžaduje vytvoøit volný úèet a pøihlášení na CleverAnalytics platformì).
