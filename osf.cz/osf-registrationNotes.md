@@ -28,7 +28,7 @@ NE
 Don't be ignorant about the world
 
 ## Jméno kontaktní osoby za organizaci/tým/firmu
-<Will be provided during registration.>
+*Will be provided during registration.*
 
 ## Jména ostatních členů týmu
 * Martin Tesař
@@ -37,13 +37,13 @@ Don't be ignorant about the world
 * Narcisa Kadlečáková
 
 ## Kontaktní email
-<Will be provided during registration.>
+*Will be provided during registration.*
 
 ## Kontaktní telefon
-<Will be provided during registration.>
+*Will be provided during registration.*
 
 ## Číslo bankovního účtu
-<Will be provided during registration.>
+*Will be provided during registration.*
 
 ## Jaké datasety by Vám pomohly aplikaci vylepšit anebo ji dále rozvíjet?
 **TODO:** Dejte nám vědět jaké další datové sady od veřejné správy by Vám pomohly aplikace dále rozvíjet anebo vylepšit.
