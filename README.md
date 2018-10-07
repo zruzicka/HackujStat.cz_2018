@@ -1,5 +1,5 @@
 # Prezentace migraèních dat
-Vytvoøeno bìhem akce HackujStat.cz 2018
+Nastartováno bìhem akce HackujStat.cz 2018
 
 ## Struèný slovní popis
 Prezentace demografických ukazatelù cizincù v Èeské republice. Využívá data Èeského statistického úøadu z let 2004-2017.
@@ -19,9 +19,9 @@ Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro 
 * https://stats.oecd.org/Index.aspx?DataSetCode=MIG
 
 ## Seznam èlenù týmu
-* Martin Tesaø
-* Zbynìk Rùžièka
-* Jindøich Mynarz
+* [Martin Tesaø](https://github.com/mattesCZ)
+* [Zbynìk Rùžièka](https://github.com/zruzicka)
+* [Jindøich Mynarz](https://github.com/jindrichmynarz)
 * Narcisa Kadleèáková
 
 ## Linky s aplikací a kódy
@@ -50,6 +50,7 @@ Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro 
 * Pøidání statistik dat cizincù za rok 2018 - tyto data mají být k dispozici (dle informace z ÈSÚ) koncem èervna 2019.
 * Rozšíøení view "Analýza cizincù ve svìtì" o statistiky také z pøedešlých let (= nikoliv prezentace dat pouze ze souèasnosti).
 ### Dlouhodobìjší mìøítko
+* Umožnit lokalizaci obsahu pro èeskou i mezinárodní veøejnost.
 * Zajímavou možností mùže být též hledání souvislostí ohlednì trendù migrace v návaznosti na ekonomické ukazatele (napø. navázání na statistiky z International Monetary Fund) nebo hledání souvislostí trendu migrace v návaznosti na politickou stabilitu.
 * Další zajímavou možností je snažit se vytvoøit uživatelsky pøívìtivé rozhraní, které by v kontextu statistik migrace umožnilo nahlédnout na události, které byly pro zvolený region významné ve zvoleném èase. Jinými slovy, navázat se na globální archiv zpráv a mít možnost nad ním vykonávat pøíkazy jako 
 `select * from [gdelt-bq:gdeltv2.events] where year=2014 and Actor1CountryCode='UKR' and sourceurl like '%ukraine%' LIMIT 20`
