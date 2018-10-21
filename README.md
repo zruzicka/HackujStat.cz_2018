@@ -21,7 +21,7 @@ Velmi atraktivní by bylo postavit platformu takovým zpùsobem, aby umožòovala veø
 
 V souèasnosti používáme k prezentaci dat platformu CleverAnalytics, která nám vyhovuje k prezentaci souèasných dat na úrovni jednotlivých státù ve svìtì nebo na úrovni jednotlivých okresù v ÈR (granularita na detailnìjší jednotky plochy je konfigurovatelná). Ale uvìdomujeme si, že máme-li integrovat otevøená data rùzného charakteru dohromady, potom mùžeme pøesáhnout i možnosti souèasné zvolené platformy a budeme hledat nová øešení.
 
-## Popis pohledù v CleverAnalytics dashboard
+## Popis v souèasnosti dostupných pohledù v CleverAnalytics dashboard
 
 ### Analýza cizincù v ÈR
 Prezentace demografických ukazatelù cizincù v Èeské republice. Využívá data Èeského statistického úøadu z let 2004-2017.
@@ -71,7 +71,7 @@ Následuje úkazka vizualizace napø. poètu migrantù v rùzném období 2006-2017 pro 
 ### Dlouhodobìjší mìøítko
 * Umožnit lokalizaci obsahu pro èeskou i mezinárodní veøejnost.
 * Zajímavou možností mùže být též hledání souvislostí ohlednì trendù migrace v návaznosti na ekonomické ukazatele (napø. navázání na statistiky z International Monetary Fund) nebo hledání souvislostí trendu migrace v návaznosti na politickou stabilitu.
-* Dále možnost hledání a integrace dalších datasetù: statistiky gramotnosti, trend vývoje objemu turismu, vývoj humanitárních misí, trendy vývoje HDP, pøípadnì podíl HDP vìnovaný na sektor vzdìlání nebo zdravotnictví, množství pøírodních katastrof dle regionu, váleèné konflikty dle regionu nebo též poèty teroristických útokù dle data a regionu, množství tìžby døeva dle regionu, produkce CO2 dle regionu nebo spotøeba pøírodních zdrojù dle regionu.
+* Dále možnost hledání a integrace dalších datasetù: statistiky gramotnosti, trend vývoje objemu turismu, vývoj humanitárních misí, trendy vývoje HDP, pøípadnì podíl HDP vìnovaný na sektor vzdìlání nebo zdravotnictví, množství pøírodních katastrof dle regionu, váleèné konflikty dle regionu nebo též poèty teroristických útokù dle data a regionu, množství tìžby døeva dle regionu, produkce CO2 dle regionu nebo spotøeba pøírodních zdrojù dle regionu. Též je možné mapovat dle regionu výskyt civilizaèních chorob nebo statistiky délky dožití.
 * Další zajímavou možností je snažit se vytvoøit uživatelsky pøívìtivé rozhraní, které by v kontextu statistik migrace umožnilo nahlédnout na události, které byly pro zvolený region významné ve zvoleném èase. Jinými slovy, navázat se na globální archiv zpráv a mít možnost nad ním vykonávat pøíkazy jako 
 `select * from [gdelt-bq:gdeltv2.events] where year=2014 and Actor1CountryCode='UKR' and sourceurl like '%ukraine%' LIMIT 20`
 napøíklad skrze [GDELT 2.0 platformu](https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/) nebo skrze [GDELT 2.0 in Google BigQuery](https://bigquery.cloud.google.com/table/gdelt-bq:gdeltv2.events)
