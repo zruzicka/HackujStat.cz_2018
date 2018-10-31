@@ -12,7 +12,31 @@ https://secure.cleveranalytics.com/ui/#/go7u17ovdi3b9t4j/project
 
 ## Popis aplikace
 **TODO:** Uveďte popis a cíl aplikace, včetně očekávaného přínosu a funkčnosti. Uveďte původ použitých zdrojových dat a také způsob využití otevřených dat.
-* [Popis projektu bude doplněn z rootu tohoto Github projektu](https://github.com/zruzicka/HackujStat.cz_2018/)
+
+Cíle projektu "Don't be ignorant about the world" jsou následující:
+
+* Zvýšit povědomí o okolním světě na základě veřejně dostupných dat a poskytnout reálné statistiky a přehledně vizualizovaná data tam, kde se vědomí veřejnosti opírá o domněnky a emoce vytvořené často na základě senzačních titulků současných médií.
+* Prezentovat "suchá" tabulková data interaktivním a atraktivním způsobem.
+* Umožnit rychlou analýzu a přehled trendů úřadům, vědeckým ústavům, neziskovým organizacím i lidem, kteří se o vybraná data a problematikou zajímají.
+* Pozitivní ohlas a zájem ze strany ČSÚ nás inspiruje cílit též na veřejnou správu - možností je též pokusit se nabízet nástroj a formy prezentace, které mohou být atraktivní a uchopitelné i pro veřejnou správu v tématice zaměstnanosti (MPSV), vzdělávání (MŠMT), migračních trendů (MV) nebo komunit krajanů ve světě (MZV).
+
+V současnosti jsme již dokázali mapovat a vizualizovat statistiky demografických ukazatelů cizinců v České republice. Data cizinců v ČR doplňujeme i tématikou migrace ve světovém měřítku a číslech.
+
+Současná zdrojová data pochází ze statistik ČSÚ a OECD.
+* https://www.czso.cz/csu/czso/cizinci-podle-statniho-obcanstvi-veku-a-pohlavi
+* https://stats.oecd.org/Index.aspx?DataSetCode=MIG
+
+Všímáme si také inspirativních online zdrojů, které zmiňují problematiku chybějících (migračních) dat nebo nedostatečného veřejného povědomí.
+
+Tématika "Don't be ignorant about the world" nám umožňuje ve světovém měřítku dále hledat, mapovat a vizualizovat i další zajímavá otevřená data jako např. statistiky gramotnosti, trend vývoje objemu turismu, vývoj humanitárních misí, trendy vývoje HDP, případně podíl HDP věnovaný na sektor vzdělání nebo zdravotnictví. Nabízí se také mapovat množství těžby dřeva dle regionu, produkce CO2 dle regionu nebo spotřeba přírodních zdrojů dle regionu. Též je možné mapovat dle regionu výskyt civilizačních chorob nebo statistiky délky dožití. Veřejnost má mít snadný přístup k datům i datovým zdrojům ohledně témat, která úzce nebo šíře ovlivňují život současné generace, ale i generací budoucích.
+
+Kromě rozšiřování datových sad si uvědomuje také úvodní potřebu zaměřit se na snadnou přístupnost projektu veřejnosti a umožnit jazykovou lokalizaci webového obsahu. 
+
+Nyní ještě velmi vzdálenou (přesto atraktivní) myšlenkou je usilovat i o určitou autonomitu projektu pro nadšence a správce podobnými principy, které umožňují spravovat obsah Wikipedie nebo stackexchange.com
+
+Otevřená data v současnosti prezentujeme a vizualizujeme skrze platformu CleverAnalytics, která vyhovuje našim současným potřebám. Také si ale uvědomujeme, že máme-li v budoucnu integrovat otevřená data různého charakteru dohromady, potom můžeme přesáhnout i možnosti současné platformy a můžeme hledat nová řešení.
+
+Více detailů, screenshoty a PDF dokument naleznete v repozitáři projektu https://github.com/zruzicka/HackujStat.cz_2018
 
 ## URL adresa doplňujícího materiálu (text, video, prezentace apod.)
 **TODO:** Uveďte URL odkaz na doplňující materiál popisující aplikaci, její funkce a využití. Pomůžete tak pořadatelům i porotcům získat důležité doplňující informace.  
