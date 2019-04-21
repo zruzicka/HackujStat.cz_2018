@@ -15,7 +15,7 @@ Cílem projektu je zvýšit povìdomí o okolním svìtì na základì veøejnì dostupných 
 
 V souèasnosti jsme již dokázali mapovat a vizualizovat statistiky demografických ukazatelù cizincù v Èeské republice (téma migrace a imigrace ve veøejnosti vytváøí emoce, ale èasto chybí pøehlednì prezentovaná reálná data pro možnost vytváøení vlastního názoru a diskuze). Data cizincù v ÈR doplòujeme i tématikou migrace ve svìtovém mìøítku a èíslech.
 
-Že pøehlednì prezentovaná data migraèního charakteru veøejnosti chybí [zmiòují v rozhovoru (v èase 28:57) také pánové Petr Sýkora a Petr Ludwig v epizodì DEEP TALKS #18](https://www.petrludwig.com/deeptalks/18-pet-sykora).
+Že pøehlednì prezentovaná data migraèního charakteru veøejnosti chybí [zmiòují v rozhovoru (v èase 28:57) také pánové Petr Sýkora a Petr Ludwig v epizodì DEEP TALKS #18](https://www.petrludwig.cz/deeptalks/18-petr-sykora).
 
 Tématika "Don't be ignorant about the world" nám umožòuje ve svìtovém mìøítku dále hledat, mapovat a vizualizovat i další zajímavá otevøená data jako napø. statistiky gramotnosti, trend vývoje objemu turismu, vývoj humanitárních misí, trendy vývoje HDP, pøípadnì podíl HDP vìnovaný na sektor vzdìlání nebo zdravotnictví. Souèástí svìta jsou i neveselá témata jako množství pøírodních katastrof dle regionu, váleèné konflikty dle regionu nebo též poèty teroristických útokù dle data a regionu. Nabízí se také mapovat množství tìžby døeva dle regionu, produkce CO2 dle regionu nebo spotøeba pøírodních zdrojù dle regionu. Též je možné mapovat dle regionu výskyt civilizaèních chorob nebo statistiky délky dožití. Veøejnost má mít snadný pøístup k datùm i datovým zdrojùm ohlednì témat, která úzce nebo šíøe ovlivòují život souèasné generace, ale i dalších generací.
 
